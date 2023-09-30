@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: inherit;
+}
+ 
+.navbar {
+  background-color: rgb(31, 41, 55);
+  font-family: Lato;
+}
+ 
+.nav-container {
+  height: 4rem;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.profile-btn img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+
+.menu-toggle-btn {
+  color: #cbd5e0;
+  display: flex;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+ 
+.menu-toggle-btn:hover{
+  color: white;
+  background-color: #4a5568;
+}
+ 
+.menu-toggle-btn:focus {
+  box-shadow: 0 0 0 2px white;
+  outline:none;
+}
+
+.hamburger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navlink {
+  display: block;
+  color: rgba(209, 213, 219, 1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  margin-left: 1rem;
+  border-radius: 0.375rem;
+}
+
+.navlink:hover {
+  color: white;
+  background-color: rgba(55, 65, 81.1);
+}
+
+.nav-drawer {
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.links {
+  display: none;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.links .navlink {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+} 
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+.navlink.active {
+  color: white;
+  background-color: rgba(17, 24, 39, 1);
+}
+
+.right-content {
+  padding-right: 0.5rem;
+}
+
+.logo-lg {
+  height: 2rem;
+  display: none; 
+}
+
+@media (min-width: 640px) {
+  .links {
+    display: flex;
+  }
+  .menu-toggle-btn {
+    display: none;
+  }
+  .nav-drawer {
+    display: none;
+  }
+   .main-content {
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-lg {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}

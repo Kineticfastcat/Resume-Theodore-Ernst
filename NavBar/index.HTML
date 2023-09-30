@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar Proposal</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <nav class="navbar">
+        <div class="nav-container">
+            <div class="left-content">
+                <div class="left-content">
+                    <button
+                      class="menu-toggle-btn"
+                      type="button"
+                      aria-controls="mobile-menu"
+                      aria-expanded="false"
+                    >
+                      <svg
+                        class="hamburger-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="main-content">
+              <img src="Images/logo.png" alt="Gondola" class="logo" />
+              <img src="Images/logo_lg.png" class="logo-lg" alt="" />
+              <div class="links">
+                <a href="#" class="navlink active">Products</a>
+                <a href="#" class="navlink">Support</a>
+                <a href="#" class="navlink">Our Team</a>
+                <a href="#" class="navlink">About</a>
+              </div>
+            </div>
+           <div class="right-content">
+               <button class="profile-btn">
+                    <img src="Images/profile_picture.png" alt="profile" />
+                </button>
+            </div>
+        </div>
+        <div class="nav-drawer hidden">
+          <a href="#" class="navlink">Products</a>
+          <a href="#" class="navlink">Support</a>
+          <a href="#" class="navlink">Our Team</a>
+          <a href="#" class="navlink">About</a>
+        </div>
+    </nav>
+    
+    <script src="navbar.js"></script>
+
+  </body>
+</html>
+
+
+
